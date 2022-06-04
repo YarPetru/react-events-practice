@@ -1,16 +1,11 @@
+import Counter from '../components/Counter/Counter';
+
+import s from './App.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={s.container}>
+      <Counter initialValue={100} />
     </div>
   );
 };

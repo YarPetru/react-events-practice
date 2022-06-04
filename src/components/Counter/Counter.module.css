@@ -1,0 +1,31 @@
+.counter {
+  padding: 40px;
+  border: 1px solid tomato;
+  text-align: center;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.controls {
+  /* display: flex;
+  justify-content: space-around; */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button {
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(71, 83, 251);
+  cursor: pointer;
+}
+.button:not(:last-child) {
+  margin-right: 10px;
+}
