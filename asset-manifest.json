@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-events-practice/static/css/main.7acaea2f.css",
+    "main.js": "/react-events-practice/static/js/main.07d3183d.js",
+    "index.html": "/react-events-practice/index.html",
+    "main.7acaea2f.css.map": "/react-events-practice/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/react-events-practice/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
