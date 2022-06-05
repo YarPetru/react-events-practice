@@ -30,9 +30,11 @@ class Counter extends Component {
   };
 
   render() {
+    const { value } = this.state;
+
     return (
       <div className={s.counter}>
-        <span className={s.value}>{this.state.value}</span>
+        <span className={s.value}>{value}</span>
         <Controls
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
