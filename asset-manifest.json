@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-events-practice/static/css/main.cf1d68d8.css",
-    "main.js": "/react-events-practice/static/js/main.94cf9411.js",
+    "main.css": "/react-events-practice/static/css/main.e766d2c7.css",
+    "main.js": "/react-events-practice/static/js/main.842056a5.js",
     "index.html": "/react-events-practice/index.html",
-    "main.cf1d68d8.css.map": "/react-events-practice/static/css/main.cf1d68d8.css.map",
-    "main.94cf9411.js.map": "/react-events-practice/static/js/main.94cf9411.js.map"
+    "main.e766d2c7.css.map": "/react-events-practice/static/css/main.e766d2c7.css.map",
+    "main.842056a5.js.map": "/react-events-practice/static/js/main.842056a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf1d68d8.css",
-    "static/js/main.94cf9411.js"
+    "static/css/main.e766d2c7.css",
+    "static/js/main.842056a5.js"
   ]
 }
