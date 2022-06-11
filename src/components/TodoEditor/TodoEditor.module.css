@@ -1,0 +1,31 @@
+.todoEditor {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid teal;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.textArea {
+  height: 60px;
+  line-height: 16px;
+  resize: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.addTodoBtn {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.addTodoBtn:hover,
+.addTodoBtn:focus {
+  background-color: steelblue;
+  color: whitesmoke;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 200ms linear;
+}

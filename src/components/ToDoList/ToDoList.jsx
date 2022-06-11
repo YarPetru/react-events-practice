@@ -1,10 +1,16 @@
 import React from 'react';
-import s from './ToDoList.module.css';
+import s from './TodoList.module.css';
 
-const ToDo = ({ todos, onDeleteTodo }) => (
+const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (
   <ul className="list">
-    {todos.map(({ id, text, complited }) => (
+    {todos.map(({ id, text, completed }) => (
       <li key={id} className={s.todo}>
+        <input
+          className={s.checkbox}
+          type="checkbox"
+          checked={completed}
+          onChange={() => onToggleCompleted(id)}
+        />
         <p className={s.description}>{text}</p>
         <button
           type="button"
@@ -18,4 +24,4 @@ const ToDo = ({ todos, onDeleteTodo }) => (
   </ul>
 );
 
-export default ToDo;
+export default TodoList;

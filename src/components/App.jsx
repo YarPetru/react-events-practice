@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 // import Counter from './Counter';
-import ToDo from './ToDoList';
-import initialTodos from './ToDoList/initialTodos.json';
+import TodoList from './TodoList';
+import initialTodos from './TodoList/initialTodos.json';
+
+import TodoEditor from './TodoEditor';
 
 import s from './App.module.css';
 
@@ -16,6 +18,16 @@ export class App extends Component {
     }));
   };
 
+  toggleCompleted = todoId => {
+    this.setState(({ todos }) => ({
+      todos: todos.map(todo =>
+        todo.id === todoId ? { ...todo, completed: !todo.completed } : todo
+      ),
+    }));
+
+    // ДОДАТИ ЗМІНУ/ДОДАВАННЯ КЛАССУ ПО ЗМІНІ СТАТУСА КОМПЛІТЕД
+  };
+
   render() {
     const { todos } = this.state;
 
@@ -28,7 +40,13 @@ export class App extends Component {
       <>
         <div className={s.container}>
           {/* <Counter initialValue={100} /> */}
-          <ToDo todos={todos} onDeleteTodo={this.deleteTodo} />
+
+          <TodoEditor />
+          <TodoList
+            todos={todos}
+            onDeleteTodo={this.deleteTodo}
+            onToggleCompleted={this.toggleCompleted}
+          />
           <div className="container">
             <p className="status-paragrph">Общее количество: {todos.length}</p>
             <p className="status-paragrph">
